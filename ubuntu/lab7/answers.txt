@@ -1,0 +1,6 @@
+we can use the valence value of the songs that are listened to
+by people and as such we can form a arithmetic expression
+based of the energy , danceabilty and combine that metric with
+valence to get a rough idea about a person's audio aura.
+the reason this metric might be incorrect is because it only takes into account the characteristics
+of the song being listened to and not a metric of the persons time spent listening to those songs.

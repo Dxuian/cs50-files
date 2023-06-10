@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "sfpro";
+  src: url("SFPRODISPLAYREGULAR.OTF");
+}
+
+.headtext {
+  background: rgb(73, 122, 73);
+  color: rgb(5, 203, 5);
+  font-size: 1rem !important;
+
+}
+
+@media only screen and (max-width:1700px) {
+  body 
+  {
+    width: 500px;
+    height: 150px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+  }
+  .footer {
+    text-align: center;
+    background: gray;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+  }
+}
+
+/* body{
+  width:500px;
+} */
+.bg-m {
+  background: rgb(149, 38, 38);
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+/* .bgmine
+{
+  background-color: rgb(177, 175, 19);
+} */
+
+
+.actualhead {
+  text-align: right;
+  color:red;
+  -webkit-grid-column-start: 2;
+  grid-column-start: 2;
+  -webkit-grid-column-end: 4;
+  grid-column-end: 4;
+  font-size: 1rem;
+  padding-top:1%;
+  line-height: 23px;
+  padding-right: 10px;
+
+}
+
+.actualhead::first-letter {
+  color: red
+
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "sfpro";
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 4rem;
+  margin-top: 1.5rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  background: yellow;
+
+}
+
+.imga {
+  height: 50px;
+  position: absolute;
+  top: 1.7rem;
+  left: 8rem;
+}
+
+#switcher {
+  padding-left: 3rem;
+  padding-bottom: 30px;
+  padding-top: 15px;
+  margin-top: auto;
+  color:hsl(49, 80%, 39%);
+ 
+}
+
+#switcheron
+{
+  padding-left: 3rem;
+  padding-bottom: 30px;
+  padding-top: 15px;
+  margin-top: auto;
+  color:hsl(49, 80%, 39%);
+  
+ 
+}
+.toggleonnow
+{
+  transition: opacity 1s;
+  opacity: 100%;
+  position:static; 
+  
+}
+.toggleoffnow
+{
+  position:absolute ; 
+  left:100%;
+  transition: opacity 1s;
+  opacity: 0%;
+  
+}

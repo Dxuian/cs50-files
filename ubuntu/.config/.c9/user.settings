@@ -1,0 +1,33 @@
+{
+    "ace": {
+        "@behavioursEnabled": true,
+        "@keyboardmode": "default",
+        "@showGutter": true,
+        "@showInvisibles": false,
+        "@theme": "ace/theme/cloud9_night"
+    },
+    "collab": {
+        "@timeslider-visible": true
+    },
+    "debug": {
+        "@pause": 0
+    },
+    "general": {
+        "@skin": "flat-dark"
+    },
+    "imgeditor": {
+        "@smooth": false,
+        "@zoom": 70
+    },
+    "openfiles": {
+        "@show": false
+    },
+    "output": {},
+    "projecttree": {
+        "@showhidden": false
+    },
+    "tabs": {
+        "@show": true
+    },
+    "terminal": {}
+}

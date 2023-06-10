@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title%}
+Stock quote
+{% endblock%}
+{% block main %}
+
+<form action="/quote" method="POST" class="bg-warning  p-5">
+     <input type="text" required name="symbol" class="form-control w-50"placeholder="Enter a stock symbol">
+     <br>
+     <br>
+     <button type="submit" class="btn m-4 btn-primary">Check price</button>
+</form>
+
+
+{% block quoted %}
+{% endblock %}
+{% endblock %}

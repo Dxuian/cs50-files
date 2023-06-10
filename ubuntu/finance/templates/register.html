@@ -1,0 +1,117 @@
+{% extends "layout.html" %}
+
+
+
+{% block title %}
+Register
+{% endblock %}
+
+{% block main %}
+<form action="/register" method="POST" onsubmit="return check()" class="bg-warning text-left mm">
+    <input type="text" name="username" class="  form-control m-3 " placeholder="Enter your username" required id="lkjhh">
+    <label for="lkjhh" class="pl-4">Choose any username</label>
+    <br>
+
+    <input type="password" name="password" class=" form-control m-3  " placeholder="Enter your password"required id="pwd">
+    <label for="pwd" class="  mb-3 ml-4">Password must be more than 7 charactes long and must contain any of @!#$%&*~_-? </label>
+    <br>
+    <input name="confirmation" type="password" placeholder="Enter your password" id="conf" class=" form-control  m-3"  required>
+        <label for="conf" class="  mb-3 ml-4">Confirm passwords</label>
+
+    <br>
+    <br>
+    <button type="submit" class="btn m-4 btn-primary">Register</button>
+
+</form>
+<script>
+     window.addEventListener("DOMContentLoaded",pw);
+     function pw()
+     {
+         document.getElementById("pwd").addEventListener("keyup",change)
+         document.getElementById("conf").addEventListener("keyup",changed)
+
+     }
+     function change()
+     {
+         var k =  document.getElementById("pwd").value
+         var m =  k.search(/[@!#$%&*~\_\-?]/g);
+         if ( document.getElementById("pwd").value.length < 7 )
+         {
+              document.getElementById("pwd").className="bg-danger form-control m-3  " ;
+         }
+
+         else if (m==-1)
+         {
+             document.getElementById("pwd").className="bg-danger form-control m-3" ;
+         }
+         else
+         {
+              document.getElementById("pwd").className= "bg-success form-control m-3" ;
+         }
+     }
+     function changed()
+     {
+         var k =  document.getElementById("conf").value
+         var m =  k.search(/[@!#$%&*~\_\-?]/g);
+         if ( document.getElementById("conf").value.length < 7 )
+         {
+              document.getElementById("conf").className="bg-danger form-control m-3  " ;
+         }
+
+         else if (m==-1)
+         {
+             document.getElementById("conf").className="bg-danger form-control m-3" ;
+         }
+         else if(document.getElementById("pwd").value!=k)
+         {
+             document.getElementById("conf").className="bg-danger form-control m-3" ;
+         }
+         else
+         {
+              document.getElementById("conf").className= "bg-success form-control m-3" ;
+         }
+     }
+    function check()
+    {
+
+
+        if(event.submitter.form.password.value==event.submitter.form.confirmation.value)
+        {
+            var k  = event.submitter.form.password.value ;
+            var m =  k.search(/[@!#$%&*~\_\-?]/g);
+            if(m==-1)
+            {
+                alert("password must contain special characters");
+                return true;
+            }
+            else if(k.length<7)
+            {
+                alert("password length to short")
+                return true;
+            }
+            alert("Processing");
+            return true;
+        }
+        else{
+            alert("passwords do not match");
+            return true;
+        }
+    }
+</script>
+{% if ver=="a" %}
+<br>
+<br>
+<div class="bg-danger rounded container-fluid display-4 p-5">Failed to regiester username already exists!</div>
+{% elif ver=="c" %}
+<br>
+<br>
+<div class="bg-danger rounded container-fluid display-4 p-5">Passwords and username connot contain spaces</div>
+{% elif ver=="b" %}
+<br>
+<br>
+<div class="bg-danger rounded container-fluid display-4 p-5">Passwords dont match!</div>
+
+
+
+{% endif %}
+{% endblock %}

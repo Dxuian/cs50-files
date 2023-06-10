@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+        <title>Birthdays</title>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1>Birthdays</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+                <h2>Add a Birthday</h2>
+                <!-- TODO: Create a form for users to submit a name, a month, and a day -->
+                <form action="/" method="POST">
+                    <input type="text" name="name">
+                    <select name="month">
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                    <select name="date">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <br>
+                    <input type="submit" value="Add a birthday">
+                </form>
+            </div>
+            <div class="section">
+                <h2>All Birthdays</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Birthday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- TODO: Loop through the database entries to display them in this table -->
+                    </tbody>
+                </table>
+                <script>
+                const once = {
+                                         once : true
+                                };
+                    window.addEventListener("load",xmlhttprq,once);
+                    var xhttp ;
+                    var k=0 ;
+                    function xmlhttprq()
+                    {
+                          xhttp = new XMLHttpRequest() ;
+                          xhttp.open("GET","/");
+                          xhttp.send();
+                          xhttp.onload = function we()
+                          {
+
+                              var ca  = "{{rows}}" ;
+                              let newStr = ca.replace(/&#34;/g, '"');
+                              let po  =  JSON.parse(newStr) ;
+                              for(let x  = 0 ; x < po.length ; x++)
+                              {
+                                  document.getElementsByTagName("tbody").innerHTML+= "<tr>" ;
+                                  document.getElementsByTagName("tbody")[0].innerHTML += "<td> "+ po[x]["name"] +"</td>" + "<td> "+ po[x]["month"] +"/" + po[x]["day"] +"</td>" ;
+
+                              }
+
+
+
+                          }
+
+
+                    }
+
+
+
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+<!--// $("tbody").innerHTML = "<tr>" ;-->
+<!--                              // for (let x = 0 ; x< this.length  ; x++ )-->
+<!--                              //     {-->
+<!--                              //          document.getElementsByTagName("tbody").innerHTML += "<td>" + this[x].name + "</td>" ;-->
+<!--                              //          document.getElementsByTagName("tbody").innerHTML += "<td>" + this[x].date + "/" + this[x].month + "</td>" ;-->
+<!--                              //     }-->
+<!--                              // $("tbody").innerHTML ="</tr>" ;-->
+
+ <!--// var ma = ca.replace(/&#34;/g,"'");-->
+ <!--                           // var pa  = ma.replace(/\'/g, "\"");-->
+ <!--                           // // var ka = pa.replace(/\\/g,"") ;-->
+ <!--                           // var paa = [];-->
+ <!--                           // for(let x = 0 ;  x<pa.length ;x++)-->
+ <!--                           // {-->
+ <!--                           //     if(pa[x]=="\")-->
+ <!--                           //     {-->
+ <!--                           //         paa[x]=' ' ;-->
+ <!--                           //     }-->
+ <!--                           //     else-->
+ <!--                           //     {-->
+ <!--                           //         paa[x] = ma[x] ;-->
+ <!--                           //     }-->
+ <!--                           // }-->
+ <!--                           //  var ta  =  ma.search(/\\/g);-->
+ <!--                           //  alert(ta);-->

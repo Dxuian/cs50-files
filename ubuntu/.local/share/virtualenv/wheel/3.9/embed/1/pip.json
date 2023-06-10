@@ -1,0 +1,62 @@
+{
+  "completed": "2023-02-15T18:34:09.963742Z",
+  "periodic": true,
+  "started": "2023-02-15T18:33:38.340802Z",
+  "versions": [
+    {
+      "filename": "pip-23.0-py3-none-any.whl",
+      "found_date": "2023-01-31T17:22:19.262391Z",
+      "release_date": "2023-01-30T23:10:52.000000Z"
+    },
+    {
+      "filename": "pip-22.3.1-py3-none-any.whl",
+      "found_date": "2022-12-25T20:32:07.856396Z",
+      "release_date": "2022-11-05T15:56:17.000000Z"
+    },
+    {
+      "filename": "pip-22.2.2-py3-none-any.whl",
+      "found_date": "2022-08-23T07:01:59.607445Z",
+      "release_date": "2022-08-03T18:56:21.000000Z"
+    },
+    {
+      "filename": "pip-22.2.1-py3-none-any.whl",
+      "found_date": "2022-08-23T07:02:23.997649Z",
+      "release_date": "2022-07-27T17:28:27.000000Z"
+    },
+    {
+      "filename": "pip-22.2-py3-none-any.whl",
+      "found_date": "2022-08-23T07:02:33.407775Z",
+      "release_date": "2022-07-21T10:25:38.000000Z"
+    },
+    {
+      "filename": "pip-22.1.2-py3-none-any.whl",
+      "found_date": "2022-07-06T11:53:18.652669Z",
+      "release_date": "2022-05-31T11:19:58.000000Z"
+    },
+    {
+      "filename": "pip-22.0.3-py3-none-any.whl",
+      "found_date": "2022-02-16T18:36:56.298333Z",
+      "release_date": "2022-02-03T08:44:11.000000Z"
+    },
+    {
+      "filename": "pip-22.0.2-py3-none-any.whl",
+      "found_date": "2022-02-16T18:37:27.687960Z",
+      "release_date": "2022-01-30T22:46:51.000000Z"
+    },
+    {
+      "filename": "pip-22.0.1-py3-none-any.whl",
+      "found_date": "2022-02-16T18:37:37.000080Z",
+      "release_date": "2022-01-30T19:43:48.000000Z"
+    },
+    {
+      "filename": "pip-22.0-py3-none-any.whl",
+      "found_date": "2022-02-16T18:37:47.497069Z",
+      "release_date": "2022-01-30T12:34:58.000000Z"
+    },
+    {
+      "filename": "pip-21.3.1-py3-none-any.whl",
+      "found_date": "2022-02-16T18:37:57.389913Z",
+      "release_date": "2021-10-22T15:57:09.000000Z"
+    }
+  ]
+}

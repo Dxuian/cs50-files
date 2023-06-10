@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block title %}
+Sell
+{% endblock %}
+{% block main %}
+<form action="/sell" method="POST"  class="form-group bg-danger p-5" >
+    <!--<input type=text   class="form-control w-50" name="symbol" placeholder="Symbol of the stock to be sold">-->
+    <select name="symbol"  class='form-control w-50' id="c">
+    </select>
+    <script>
+        var c = "{{hold}}";
+        var k = c.replace(/&#34;/g,'"');
+        var  hold = JSON.parse(k) ;
+        for(let x =  0 ; x< hold.length ; x++)
+        {
+            document.getElementById("c").innerHTML+="<option  class='form-control w-50' value=" +"'"+hold[x]["symbol"] +"'"+ ">" + hold[x]["symbol"] + "</option>" ;
+        }
+
+
+    </script>
+    <br>
+     <br>
+    <input type="number" class="form-control w-50" name="shares" min=1 placeholder="Enter the amount of shares to be sold">
+
+    <br>
+     <br>
+    <button type="submit" name="submit" class="btn m-4 btn-primary">Sell</button>
+</form>
+{% if cur=="N" %}
+<div class="container bg-danger">
+    No such stock exists
+</div>
+{% elif cur=="less" %}
+<div class="container bg-warning">
+    Not enough shares to sell
+</div>
+{% endif %}
+{% endblock %}

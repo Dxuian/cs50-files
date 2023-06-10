@@ -1,0 +1,237 @@
+{
+  "completed": "2023-02-15T18:34:45.055524Z",
+  "periodic": true,
+  "started": "2023-02-15T18:33:38.202203Z",
+  "versions": [
+    {
+      "filename": "setuptools-67.3.2-py3-none-any.whl",
+      "found_date": "2023-02-15T18:33:40.050990Z",
+      "release_date": "2023-02-15T17:02:28.000000Z"
+    },
+    {
+      "filename": "setuptools-67.3.1-py3-none-any.whl",
+      "found_date": "2023-02-15T18:34:11.180548Z",
+      "release_date": "2023-02-14T09:47:26.000000Z"
+    },
+    {
+      "filename": "setuptools-67.2.0-py3-none-any.whl",
+      "found_date": "2023-02-15T18:34:17.961670Z",
+      "release_date": "2023-02-07T03:22:43.000000Z"
+    },
+    {
+      "filename": "setuptools-67.1.0-py3-none-any.whl",
+      "found_date": "2023-02-15T18:34:25.949617Z",
+      "release_date": "2023-02-01T14:54:57.000000Z"
+    },
+    {
+      "filename": "setuptools-67.0.0-py3-none-any.whl",
+      "found_date": "2023-01-31T17:22:19.360119Z",
+      "release_date": "2023-01-28T19:01:03.000000Z"
+    },
+    {
+      "filename": "setuptools-66.1.1-py3-none-any.whl",
+      "found_date": "2023-01-31T17:22:45.768382Z",
+      "release_date": "2023-01-20T19:59:29.000000Z"
+    },
+    {
+      "filename": "setuptools-66.1.0-py3-none-any.whl",
+      "found_date": "2023-01-31T17:22:54.772840Z",
+      "release_date": "2023-01-20T12:38:31.000000Z"
+    },
+    {
+      "filename": "setuptools-66.0.0-py3-none-any.whl",
+      "found_date": "2023-01-31T17:23:00.558627Z",
+      "release_date": "2023-01-16T02:46:16.000000Z"
+    },
+    {
+      "filename": "setuptools-65.7.0-py3-none-any.whl",
+      "found_date": "2023-01-31T17:23:07.476545Z",
+      "release_date": "2023-01-11T19:11:19.000000Z"
+    },
+    {
+      "filename": "setuptools-65.6.3-py3-none-any.whl",
+      "found_date": "2022-12-25T20:32:08.172844Z",
+      "release_date": "2022-11-24T06:09:28.000000Z"
+    },
+    {
+      "filename": "setuptools-65.4.1-py3-none-any.whl",
+      "found_date": "2022-10-10T13:17:52.588322Z",
+      "release_date": "2022-09-30T01:00:04.000000Z"
+    },
+    {
+      "filename": "setuptools-65.4.0-py3-none-any.whl",
+      "found_date": "2022-10-10T13:18:08.977373Z",
+      "release_date": "2022-09-24T20:40:59.000000Z"
+    },
+    {
+      "filename": "setuptools-65.3.0-py3-none-any.whl",
+      "found_date": "2022-09-06T17:43:01.405258Z",
+      "release_date": "2022-08-24T11:09:27.000000Z"
+    },
+    {
+      "filename": "setuptools-65.2.0-py3-none-any.whl",
+      "found_date": "2022-08-23T07:01:59.736331Z",
+      "release_date": "2022-08-21T22:56:21.000000Z"
+    },
+    {
+      "filename": "setuptools-65.1.1-py3-none-any.whl",
+      "found_date": "2022-08-23T07:02:24.208641Z",
+      "release_date": "2022-08-21T07:05:57.000000Z"
+    },
+    {
+      "filename": "setuptools-65.1.0-py3-none-any.whl",
+      "found_date": "2022-08-23T07:02:34.203929Z",
+      "release_date": "2022-08-18T14:00:14.000000Z"
+    },
+    {
+      "filename": "setuptools-65.0.2-py3-none-any.whl",
+      "found_date": "2022-08-23T07:02:45.593288Z",
+      "release_date": "2022-08-17T02:56:42.000000Z"
+    },
+    {
+      "filename": "setuptools-65.0.1-py3-none-any.whl",
+      "found_date": "2022-08-23T07:02:51.202179Z",
+      "release_date": "2022-08-15T21:58:55.000000Z"
+    },
+    {
+      "filename": "setuptools-65.0.0-py3-none-any.whl",
+      "found_date": "2022-08-23T07:02:54.342500Z",
+      "release_date": "2022-08-14T17:40:27.000000Z"
+    },
+    {
+      "filename": "setuptools-64.0.3-py3-none-any.whl",
+      "found_date": "2022-08-23T07:02:59.245532Z",
+      "release_date": "2022-08-12T19:32:33.000000Z"
+    },
+    {
+      "filename": "setuptools-64.0.2-py3-none-any.whl",
+      "found_date": "2022-08-23T07:03:02.419658Z",
+      "release_date": "2022-08-12T15:56:17.000000Z"
+    },
+    {
+      "filename": "setuptools-64.0.1-py3-none-any.whl",
+      "found_date": "2022-08-23T07:03:06.441473Z",
+      "release_date": "2022-08-11T22:15:52.000000Z"
+    },
+    {
+      "filename": "setuptools-64.0.0-py3-none-any.whl",
+      "found_date": "2022-08-23T07:03:10.028132Z",
+      "release_date": "2022-08-11T13:56:47.000000Z"
+    },
+    {
+      "filename": "setuptools-63.4.3-py3-none-any.whl",
+      "found_date": "2022-08-23T07:03:13.222167Z",
+      "release_date": "2022-08-10T19:03:39.000000Z"
+    },
+    {
+      "filename": "setuptools-63.4.2-py3-none-any.whl",
+      "found_date": "2022-08-23T07:03:17.600391Z",
+      "release_date": "2022-08-06T20:33:01.000000Z"
+    },
+    {
+      "filename": "setuptools-63.4.1-py3-none-any.whl",
+      "found_date": "2022-08-23T07:03:20.735967Z",
+      "release_date": "2022-08-03T16:22:45.000000Z"
+    },
+    {
+      "filename": "setuptools-63.4.0-py3-none-any.whl",
+      "found_date": "2022-08-23T07:03:24.394997Z",
+      "release_date": "2022-08-03T03:04:21.000000Z"
+    },
+    {
+      "filename": "setuptools-63.3.0-py3-none-any.whl",
+      "found_date": "2022-08-23T07:03:28.002713Z",
+      "release_date": "2022-08-01T01:30:55.000000Z"
+    },
+    {
+      "filename": "setuptools-63.2.0-py3-none-any.whl",
+      "found_date": "2022-07-20T13:43:15.070771Z",
+      "release_date": "2022-07-14T00:37:44.000000Z"
+    },
+    {
+      "filename": "setuptools-63.1.0-py3-none-any.whl",
+      "found_date": "2022-07-06T11:53:19.148812Z",
+      "release_date": "2022-07-04T02:25:55.000000Z"
+    },
+    {
+      "filename": "setuptools-63.0.0-py3-none-any.whl",
+      "found_date": "2022-07-06T11:54:20.449269Z",
+      "release_date": "2022-07-03T23:38:38.000000Z"
+    },
+    {
+      "filename": "setuptools-62.6.0-py3-none-any.whl",
+      "found_date": "2022-07-06T11:54:36.043897Z",
+      "release_date": "2022-06-19T20:52:29.000000Z"
+    },
+    {
+      "filename": "setuptools-62.5.0-py3-none-any.whl",
+      "found_date": "2022-07-06T11:54:49.545683Z",
+      "release_date": "2022-06-17T21:44:07.000000Z"
+    },
+    {
+      "filename": "setuptools-62.4.0-py3-none-any.whl",
+      "found_date": "2022-07-06T11:55:02.454627Z",
+      "release_date": "2022-06-13T12:39:05.000000Z"
+    },
+    {
+      "filename": "setuptools-62.3.4-py3-none-any.whl",
+      "found_date": "2022-07-06T11:55:06.069073Z",
+      "release_date": "2022-06-11T12:44:27.000000Z"
+    },
+    {
+      "filename": "setuptools-62.3.3-py3-none-any.whl",
+      "found_date": "2022-07-06T11:55:10.265682Z",
+      "release_date": "2022-06-07T18:55:31.000000Z"
+    },
+    {
+      "filename": "setuptools-60.9.2-py3-none-any.whl",
+      "found_date": "2022-02-16T18:36:56.395605Z",
+      "release_date": "2022-02-16T13:57:49.000000Z"
+    },
+    {
+      "filename": "setuptools-60.9.1-py3-none-any.whl",
+      "found_date": "2022-02-16T18:37:28.898384Z",
+      "release_date": "2022-02-15T11:21:01.000000Z"
+    },
+    {
+      "filename": "setuptools-60.9.0-py3-none-any.whl",
+      "found_date": "2022-02-16T18:37:39.802243Z",
+      "release_date": "2022-02-14T00:20:04.000000Z"
+    },
+    {
+      "filename": "setuptools-60.8.2-py3-none-any.whl",
+      "found_date": "2022-02-16T18:37:51.394418Z",
+      "release_date": "2022-02-09T17:01:48.000000Z"
+    },
+    {
+      "filename": "setuptools-60.8.1-py3-none-any.whl",
+      "found_date": "2022-02-16T18:38:03.510532Z",
+      "release_date": "2022-02-06T18:09:14.000000Z"
+    },
+    {
+      "filename": "setuptools-60.8.0-py3-none-any.whl",
+      "found_date": "2022-02-16T18:38:08.821630Z",
+      "release_date": "2022-02-06T04:34:51.000000Z"
+    },
+    {
+      "filename": "setuptools-60.7.1-py3-none-any.whl",
+      "found_date": "2022-02-16T18:38:12.500428Z",
+      "release_date": "2022-02-03T04:59:04.000000Z"
+    },
+    {
+      "filename": "setuptools-60.7.0-py3-none-any.whl",
+      "found_date": "2022-02-16T18:38:16.420234Z",
+      "release_date": "2022-02-02T10:32:01.000000Z"
+    },
+    {
+      "filename": "setuptools-60.6.0-py3-none-any.whl",
+      "found_date": "2022-02-16T18:38:19.919618Z",
+      "release_date": "2022-01-31T03:47:46.000000Z"
+    },
+    {
+      "filename": "setuptools-60.5.0-py3-none-any.whl",
+      "found_date": "2022-02-16T18:38:24.085858Z",
+      "release_date": "2022-01-08T21:36:47.000000Z"
+    }
+  ]
+}

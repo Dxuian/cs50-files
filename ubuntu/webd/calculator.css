@@ -1,0 +1,13 @@
+body
+{
+    margin:0px;
+    padding:0px;
+    background-color:#000000;
+    background-size:cover;
+}
+.heading
+{
+font-size:7vw;
+color:orange;
+margin-left:300;
+}    

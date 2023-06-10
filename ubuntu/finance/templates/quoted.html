@@ -1,0 +1,19 @@
+{% extends "quote.html" %}
+ {% block title %}
+ Stock quoted
+ {% endblock %}
+
+
+{% block quoted %}
+{% if name != "None" %}
+<ul class=" list-group">
+    <li class="list-group-item bg-danger" >Company name : {{name}}</li>
+    <li class="list-group-item bg-success">Stock price: {{price}}</li>
+    <li class="list-group-item bg-primary">Stock listing symbol: {{symbol}}</li>
+</ul>
+{% else %}
+<ul class="list-group">
+    <li class="list-group-item bg-danger" >Incorrect stock symbol!</li>
+</ul>
+{% endif %}
+{% endblock %}

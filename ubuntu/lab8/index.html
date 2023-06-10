@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            // TODO: Add code to check answers to questions
+            document.addEventListener("DOMContentLoaded",start) ;
+
+        function verifypart2()
+        {
+                debugger ;
+                var form2 = document.getElementById("form2") ;
+
+               var text = form2.elements[0].value ;
+               if(text.length < 13)
+               {
+                   form2.elements[0].style.background = "green"  ;
+               }
+               else
+               {
+                   form2.elements[0].style.background = "red" ;
+               }
+
+                for( let i =  0 ; i < form2.elements.length ; i++)
+            {
+                form2.elements[i].disabled = true ;
+            }
+        }
+        function start(verifypart1 , verifypart2)
+        {
+
+            // document.getElementById("form1").addEventListener("onsubmit",verifypart1,once=true) ;
+              debugger ;
+              var form2 = document.getElementById("form2") ;
+             form2.elements[1].style.marginBottom = "10px" ;
+            // document.getElementById("form2").addEventListener("onsubmit",verifypart2) ;
+            // debugger;
+        }
+            function verifypart1()
+        {
+
+               const form1CorrectAns="Argentina" ;
+               const  x = document.querySelectorAll("input[type=submit]");
+                var but = event.submitter ;
+                debugger  ;
+               if (event.submitter.value==form1CorrectAns)
+               {
+                   but.style.background="green" ;
+                      var node = document.createElement("p") ;
+                   node.innerHTML = "Correct answer" ;
+                    // var z  = p.appendChild(text) ;
+                    document.getElementById("form1").insertBefore(node,but.nextSibling) ;
+
+                    node.style.marginLeft= "40px" ;
+                    node.style.marginRight= "40px" ;
+                    node.style.paddingLeft= "40px" ;
+                    node.style.fontFamily = "Montserrat"
+
+                    node.style.background="#0f03" ;
+                    node.style.fontSize="30px"
+               }
+               else
+               {
+
+                    but.style.background= "red"  ;
+                    // var p  = document.createElement("p") ;
+                    // var te = document.createTextNode("Incorrect answer") ;
+                    // var z =  p.appendChild(te) ;
+
+                    // const para = document.createElement("p");
+                    // const node = document.createTextNode("Incorrect answer");
+                    // para.appendChild(node);
+                    // document.getElementById("form1").insertBefore( para.appendChild(node),but.nextSibling) ;
+                    //  para.appendChild(node).style.marginLeft= "20px" ;
+                    // var k  = "hello"
+                    var node = document.createElement("p") ;
+                   node.innerHTML = "Incorrect answer" ;
+                    // var z  = p.appendChild(text) ;
+                    document.getElementById("form1").insertBefore(node,but.nextSibling) ;
+
+                    node.style.marginLeft= "40px" ;
+                    node.style.marginRight= "40px" ;
+                    node.style.paddingLeft= "40px" ;
+                    node.style.fontFamily = "Montserrat"
+                    node.style.background="#f003" ;
+                    node.style.fontSize="30px"
+
+
+               }
+
+               const form1  = document.getElementById("form1") ;
+               for ( let i = 0  ; i < 4 ; i++)
+               {
+                   form1.elements[i].disabled = true ;
+               }
+               var zer= 123123 ;
+               return false  ;
+
+        }
+
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3> Which country won the 2022 FIFA world cup?</h3>
+                <form id="form1" onsubmit="verifypart1(); return false">
+                 <label for="1">Option 1</label>
+                 <input type="submit" value="Germany" >
+                 <br>
+                 <label for="2">Option 2</label>
+                 <input type="submit" value="Argentina">
+                 <br>
+                 <label for="3">Option 3</label>
+                 <input type="submit" value="Russia">
+                 <br>
+                 <label for="4">Option 4</label>
+                 <input type="submit" value="USA" title="United states of america">
+                 <br>
+                </form>
+
+
+                <!-- TODO: Add multiple choice question here -->
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <h3>Write your name  in less than 13 characters</h3>
+                <form id="form2" onsubmit="verifypart2() ; return false" >
+                    <input type="text">
+                    <input type="submit">
+                </form>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+
+            </div>
+
+        </div>
+    </body>
+</html>

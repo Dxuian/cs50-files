@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+        <title>Movies</title>
+        <meta charset="UTF-8">
+        <meta name="Unnat" content="Landing Page">
+        <meta name="keywords" content="HTML, CSS, JavaScript,gaming,movies">
+        <meta name="author" content="Unnat Bharol">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div style=" background:rgba(10,121,19,0.6); text-align:center; height:100vh;padding-top:50vh; z-index:3" id="load">
+            <div class="spinner-grow text-muted"></div>
+            <h1>Loading</h1>
+        </div>
+        <script src="loader.js"></script>
+        <div id="noload">
+            <header class="container-fluid customback">
+                <h1>
+                    Movies
+                </h1>
+            </header>
+            <main>
+                <nav class="navbar sticky-top navbar-light">
+                    <a class="navbar-brand" href="index.html">Homepage</a>
+                    <a class="navbar-brand" href="gaming.html">Gaming</a>
+                    <a class="navbar-brand" href="sci.html">Science and technology</a>
+                </nav>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 ov leftrow">
+                            <div class="mar mt-4 mb-3">
+                                <div class="blu bg-danger" id="qwer">
+                                    <div class="tex">
+                                        <img class="imgscalet2"
+                                            src="data:image/jpeg;base64,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">
+                                        <span class="scaler bg-danger textstyle ">
+                                        Avengers: Infinity War is a film that follows the
+                                        <br>
+                                        story of the Avengers, a group of superheroes who come together
+                                        <br>
+                                        to defend the Earth against the powerful and ruthless alien, Thanos.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="acc textstyle">
+                                    Avengers: Infinty war
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 parentcs textstyle">
+                            Movies have the power to transport us to different times, places, and realities.<br> They can make us laugh, cry, and feel a range of emotions in a way that few other mediums can.<br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 ov leftrow">
+                            <div class="mar  mt-4 mb-3">
+                                <div class="blu bg-danger" id="qwe">
+                                    <div class="tex">
+                                        <img class="imgscalet2" src="https://wallpaperaccess.com/full/639436.jpg">
+                                        <span class="scaler bg-danger textstyle fontres">
+                                        "Transformers: Age of Extinction" is a 2014 science fiction action film<br>
+                                        and the fourth installment in the "Transformers" film series.The film<br>
+                                        follows the story of Cade Yeager, a struggling inventor, and his daughter<br>
+                                        Tessa as they team up with the Transformers to save the world from
+                                        foes
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="acc textstyle">
+                                    Transformers 4
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 parentcs textstyle">
+                            Some movies are designed to entertain and provide an escape from the stresses of daily life, while others are meant to challenge and inspire us to think deeply about the world and our place in it.<br> No matter what type of movie you prefer.
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 ov leftrow">
+                                <div class="mar mt-4 mb-3">
+                                    <div class="blu bg-danger" id="qw">
+                                        <div class="tex">
+                                            <img class="imgscalet2" src="https://i.ytimg.com/vi/gJc0IQ850Hs/maxresdefault.jpg" >
+                                            <span class="scaler bg-danger textstyle ">
+                                            "Insidious: Chapter 3" is a 2015 horror film. It's a prequel to the first<br> two "Insidious" movies and follows a teenage girl named<br>  Quinn who is being haunted by a malevolent spirit. The film is set in <br>the same universe as the first two movies.                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="acc textstyle">
+                                        Insidous 3
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 parentcs textstyle">
+                                One of the great things about movies is that they can be enjoyed by people of all ages.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 ov leftrow">
+                                <div class="mar mt-4 mb-3">
+                                    <div class="blu bg-danger" id="q">
+                                        <div class="tex">
+                                            <img class="imgscalet2" src="https://e1.pxfuel.com/desktop-wallpaper/897/650/desktop-wallpaper-interstellar-film-poster-ultra-high-quality-walls-interstellar-movie.jpg">
+                                            <span class="scaler bg-danger textstyle ">
+
+                                           Interstellar is a sci-fi film about astronauts on a mission to find<br> a new home for humanity.
+                                           They face challenges like time <br>dilation and gravitational  anomalies. The<br> protagonist, Cooper, must
+                                           make tough choices to ensure humanity's survival....
+
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="acc textstyle">
+                                        Interstellar
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 parentcs textstyle">
+                                In recent years, the movie industry has undergone significant changes, with the rise of streaming services and online platforms.
+                            </div>
+                        </div>
+                    </div>
+            </main>
+            </div>
+        </div>
+        <script src="mover.js"></script>
+        <script src="mover2.js"></script>
+        <script src="mover3.js"></script>
+        <script src="mover4.js"></script>
+    </body>
+</html>

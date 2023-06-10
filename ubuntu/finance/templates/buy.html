@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block title %}
+Buy Stocks
+{% endblock %}
+{% block main %}
+<form action="/buy" method="POST" class="form-group bg-warning p-5">
+    <input type="text" name="symbol" class="form-control col-sm-6 w-50" placeholder="Enter symbol to check its price" required>
+    <br>
+    <br>
+    <input type="number" name="shares" class="form-control col-sm-6 w-50" placeholder="Enter the number of shares" min="1" required>
+    <br>
+    <br>
+    <button type="submit" class="btn m-4 btn-primary">Buy</button>
+</form>
+
+{% if listing=="N" and a=="post" %}
+<ul class="list-group">
+    <li class="list-group-item bg-danger" >Incorrect stock symbol!</li>
+</ul>
+{% elif (listing=="nomoni" and a=="post") %}
+<ul class="list-group">
+    <li class="list-group-item bg-danger" ><h1>LOW FUNDS</h1></li>
+</ul>
+{% elif (listing=="L" and a=="post") %}
+<ul class="list-group">
+    <li class="list-group-item bg-danger" ><h1>Shares can only be integers</h1></li>
+</ul>
+{% elif a=="post" %}
+<ul class="list-group">
+    <li class="list-group-item bg-danger" >Purchase succesfull</li>
+</ul>
+{% endif %}
+
+
+{% endblock %}

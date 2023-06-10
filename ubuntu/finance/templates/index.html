@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+{% block title %}
+Personal holdings
+{% endblock %}
+
+{% block main %}
+
+{% if zer=="1" %}
+<div class="container-fluid rko p-4 bg-na">
+<h1 class="l">Name: {{user}}</h1>
+<h1 class="l" id="bal">Account balance: </h1>
+<h1 id="tot" class="l">Total valuation: </h1>
+<!--<h1>112.00</h1>-->
+<!--<h1>9,888.00</h1>-->
+<table class="rko  table bg-warning unntbuy" id="tablepole">
+    <caption> Stock holdings </caption>
+    <thead>
+        <tr class="display-5">
+            <td class="table-th">Stock name</td>
+            <td class="table-th">Shares symbols</td>
+            <td class="table-th">Stocks held</td>
+            <td class="table-th">Current value of stock</td>
+            <td class="table-th">total value of stock</td>
+        </tr>
+    </thead>
+    <tbody id="b">
+
+    </tbody>
+
+</table>
+
+</div>
+<span class="text-left mr-auto pr-auto --gray">All prices in USD</span>
+<script>
+     window.addEventListener("DOMContentLoaded",fn);
+    function fn()
+    {
+        let po = "{{holdings}}";
+         let newStr = po.replace(/&#34;/g, '"');
+          var holdings = JSON.parse(newStr);
+        let ko = "{{ret}}";
+         let newSt = ko.replace(/&#34;/g, '"');
+      var ret = JSON.parse(newSt);
+     var stockstot = 0 ;
+       for( let x = 0 ; x< holdings.length; x++ )
+       {
+            priceval =  Number(ret[x]["price"].slice(1))
+           if(Number(holdings[x]["share_held"])==0)
+           {
+               continue;
+           }
+           if(x%2==0){
+
+
+        document.getElementById("b").innerHTML+= "<tr class='unnat'>"+"<td>" + ret[x]["name"] +"</td>"+"<td>" +
+                                                holdings[x]["symbol"] + "</td>" + "<td>" + Number(holdings[x]["share_held"]).toLocaleString() +
+                                                "</td>" + "<td>"  + ret[x]["price"] + "</td>" + "<td>" +"$"+
+                                                ((Number(holdings[x]["share_held"])*priceval)).toLocaleString() + "<td>"  + "</tr>" ;
+           }
+           else{
+                 document.getElementById("b").innerHTML+= "<tr class='notunnat'>"+"<td>" +ret[x]["name"] +"</td>"+"<td>" +
+                                                holdings[x]["symbol"] + "</td>" + "<td>" + Number(holdings[x]["share_held"]).toLocaleString() +
+                                                "</td>" + "<td>"  + ret[x]["price"] + "</td>" + "<td>" +"$"+
+                                                ((Number(holdings[x]["share_held"])*priceval)).toLocaleString() + "<td>"  + "</tr>" ;
+           }
+
+        stockstot+= (Number(holdings[x]["share_held"])*priceval);
+       }
+       document.getElementById("b").innerHTML+= "<tr>" + "<td colspan=4 class='bg-danger pl-5 unntbu' style='text-align:left;'> Total stock holding </td>" + "<td>" + "$"+stockstot.toLocaleString() + "</td>" +"</tr>" ;
+       var conv = "{{bal}}" ;
+       var m  = conv.slice(1) ;
+       var k = m.replace(/,/g,"")
+       var g = Number(k)
+       document.getElementById("tot").innerHTML+= "$" + (stockstot + g).toLocaleString();
+       document.getElementById("bal").innerHTML+= "{{bal}}";
+
+
+    }
+
+    </script>
+{% else %}
+<div class="conatiner bg-danger rounded">
+    <h1 class="display-3 p-5 rko rounded ">You havent made any Transactions </h1>
+    <h1 class="display-5 m-5 rko rounded bg-success ">You have $10000 in your account</h1>
+    <h1 class="display-5 p-5 bg-warning rounded text-left">You can buy or sell shares or check the values of current stock quote prices</h1>
+</div>
+{% endif %}
+
+
+{% endblock %}

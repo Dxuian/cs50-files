@@ -1,0 +1,148 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'sass'
+1 verbose cli ]
+2 info using npm@6.14.15
+3 info using node@v12.22.6
+4 verbose npm-session ad97c96e936d1390
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 http fetch GET 200 https://registry.npmjs.org/sass 170ms
+8 http fetch GET 200 https://registry.npmjs.org/sass/-/sass-1.56.2.tgz 122ms
+9 silly pacote tag manifest for sass@latest fetched in 310ms
+10 timing stage:loadCurrentTree Completed in 374ms
+11 silly install loadIdealTree
+12 silly install cloneCurrentTreeToIdealTree
+13 timing stage:loadIdealTree:cloneCurrentTree Completed in 0ms
+14 silly install loadShrinkwrap
+15 timing stage:loadIdealTree:loadShrinkwrap Completed in 1ms
+16 silly install loadAllDepsIntoIdealTree
+17 silly resolveWithNewModule sass@1.56.2 checking installable status
+18 http fetch GET 200 https://registry.npmjs.org/source-map-js 48ms
+19 http fetch GET 200 https://registry.npmjs.org/chokidar 59ms
+20 http fetch GET 200 https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.2.tgz 59ms
+21 http fetch GET 200 https://registry.npmjs.org/immutable 110ms
+22 silly pacote range manifest for source-map-js@>=0.6.2 <2.0.0 fetched in 113ms
+23 silly resolveWithNewModule source-map-js@1.0.2 checking installable status
+24 http fetch GET 200 https://registry.npmjs.org/chokidar/-/chokidar-3.5.3.tgz 67ms
+25 silly pacote range manifest for chokidar@>=3.0.0 <4.0.0 fetched in 204ms
+26 silly resolveWithNewModule chokidar@3.5.3 checking installable status
+27 http fetch GET 200 https://registry.npmjs.org/immutable/-/immutable-4.1.0.tgz 92ms
+28 silly pacote range manifest for immutable@^4.0.0 fetched in 204ms
+29 silly resolveWithNewModule immutable@4.1.0 checking installable status
+30 http fetch GET 200 https://registry.npmjs.org/anymatch 98ms
+31 http fetch GET 200 https://registry.npmjs.org/is-glob 191ms
+32 http fetch GET 200 https://registry.npmjs.org/braces 193ms
+33 http fetch GET 200 https://registry.npmjs.org/normalize-path 195ms
+34 http fetch GET 200 https://registry.npmjs.org/glob-parent 196ms
+35 http fetch GET 200 https://registry.npmjs.org/is-binary-path 195ms
+36 http fetch GET 200 https://registry.npmjs.org/readdirp 197ms
+37 http fetch GET 200 https://registry.npmjs.org/fsevents 200ms
+38 http fetch GET 200 https://registry.npmjs.org/anymatch/-/anymatch-3.1.3.tgz 106ms
+39 silly pacote range manifest for anymatch@~3.1.2 fetched in 209ms
+40 silly resolveWithNewModule anymatch@3.1.3 checking installable status
+41 http fetch GET 200 https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz 100ms
+42 http fetch GET 200 https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz 91ms
+43 http fetch GET 200 https://registry.npmjs.org/braces/-/braces-3.0.2.tgz 99ms
+44 http fetch GET 200 https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz 98ms
+45 http fetch GET 200 https://registry.npmjs.org/readdirp/-/readdirp-3.6.0.tgz 94ms
+46 http fetch GET 200 https://registry.npmjs.org/is-binary-path/-/is-binary-path-2.1.0.tgz 97ms
+47 http fetch GET 200 https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz 99ms
+48 silly pacote range manifest for braces@~3.0.2 fetched in 302ms
+49 silly resolveWithNewModule braces@3.0.2 checking installable status
+50 silly pacote range manifest for readdirp@~3.6.0 fetched in 301ms
+51 silly resolveWithNewModule readdirp@3.6.0 checking installable status
+52 silly pacote range manifest for is-glob@~4.0.1 fetched in 302ms
+53 silly resolveWithNewModule is-glob@4.0.3 checking installable status
+54 silly pacote range manifest for fsevents@~2.3.2 fetched in 302ms
+55 silly resolveWithNewModule fsevents@2.3.2 checking installable status
+56 silly pacote range manifest for normalize-path@~3.0.0 fetched in 304ms
+57 silly resolveWithNewModule normalize-path@3.0.0 checking installable status
+58 silly pacote range manifest for is-binary-path@~2.1.0 fetched in 305ms
+59 silly resolveWithNewModule is-binary-path@2.1.0 checking installable status
+60 silly pacote range manifest for glob-parent@~5.1.2 fetched in 305ms
+61 silly resolveWithNewModule glob-parent@5.1.2 checking installable status
+62 http fetch GET 200 https://registry.npmjs.org/picomatch 21ms
+63 http fetch GET 200 https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz 60ms
+64 silly pacote range manifest for picomatch@^2.0.4 fetched in 85ms
+65 silly resolveWithNewModule picomatch@2.3.1 checking installable status
+66 http fetch GET 200 https://registry.npmjs.org/fill-range 22ms
+67 http fetch GET 200 https://registry.npmjs.org/fill-range/-/fill-range-7.0.1.tgz 29ms
+68 silly pacote range manifest for fill-range@^7.0.1 fetched in 54ms
+69 silly resolveWithNewModule fill-range@7.0.1 checking installable status
+70 http fetch GET 200 https://registry.npmjs.org/to-regex-range 24ms
+71 http fetch GET 200 https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz 73ms
+72 silly pacote range manifest for to-regex-range@^5.0.1 fetched in 99ms
+73 silly resolveWithNewModule to-regex-range@5.0.1 checking installable status
+74 http fetch GET 200 https://registry.npmjs.org/is-number 22ms
+75 http fetch GET 200 https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz 40ms
+76 silly pacote range manifest for is-number@^7.0.0 fetched in 64ms
+77 silly resolveWithNewModule is-number@7.0.0 checking installable status
+78 http fetch GET 200 https://registry.npmjs.org/is-extglob 26ms
+79 http fetch GET 200 https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.1.tgz 51ms
+80 silly pacote range manifest for is-extglob@^2.1.1 fetched in 80ms
+81 silly resolveWithNewModule is-extglob@2.1.1 checking installable status
+82 http fetch GET 200 https://registry.npmjs.org/binary-extensions 83ms
+83 http fetch GET 200 https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz 33ms
+84 silly pacote range manifest for binary-extensions@^2.0.0 fetched in 117ms
+85 silly resolveWithNewModule binary-extensions@2.2.0 checking installable status
+86 timing stage:loadIdealTree:loadAllDepsIntoIdealTree Completed in 1029ms
+87 timing stage:loadIdealTree Completed in 1036ms
+88 silly currentTree lib
+89 silly idealTree lib
+89 silly idealTree └─┬ sass@1.56.2
+89 silly idealTree   ├── anymatch@3.1.3
+89 silly idealTree   ├── binary-extensions@2.2.0
+89 silly idealTree   ├── braces@3.0.2
+89 silly idealTree   ├── chokidar@3.5.3
+89 silly idealTree   ├── fill-range@7.0.1
+89 silly idealTree   ├── fsevents@2.3.2
+89 silly idealTree   ├── glob-parent@5.1.2
+89 silly idealTree   ├── immutable@4.1.0
+89 silly idealTree   ├── is-binary-path@2.1.0
+89 silly idealTree   ├── is-extglob@2.1.1
+89 silly idealTree   ├── is-glob@4.0.3
+89 silly idealTree   ├── is-number@7.0.0
+89 silly idealTree   ├── normalize-path@3.0.0
+89 silly idealTree   ├── picomatch@2.3.1
+89 silly idealTree   ├── readdirp@3.6.0
+89 silly idealTree   ├── source-map-js@1.0.2
+89 silly idealTree   └── to-regex-range@5.0.1
+90 silly install generateActionsToTake
+91 warn checkPermissions Missing write access to /usr/local/lib/node_modules
+92 timing stage:rollbackFailedOptional Completed in 1ms
+93 timing stage:runTopLevelLifecycles Completed in 1415ms
+94 warn optional SKIPPING OPTIONAL DEPENDENCY: fsevents@~2.3.2 (node_modules/sass/node_modules/chokidar/node_modules/fsevents):
+95 warn notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+96 verbose notsup SKIPPING OPTIONAL DEPENDENCY: Valid OS:    darwin
+96 verbose notsup SKIPPING OPTIONAL DEPENDENCY: Valid Arch:  any
+96 verbose notsup SKIPPING OPTIONAL DEPENDENCY: Actual OS:   linux
+96 verbose notsup SKIPPING OPTIONAL DEPENDENCY: Actual Arch: x64
+97 verbose stack Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+98 verbose cwd /home/ubuntu
+99 verbose Linux 5.4.209-116.367.amzn2.x86_64
+100 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "sass"
+101 verbose node v12.22.6
+102 verbose npm  v6.14.15
+103 error code EACCES
+104 error syscall access
+105 error path /usr/local/lib/node_modules
+106 error errno -13
+107 error Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+107 error  [Error: EACCES: permission denied, access '/usr/local/lib/node_modules'] {
+107 error   errno: -13,
+107 error   code: 'EACCES',
+107 error   syscall: 'access',
+107 error   path: '/usr/local/lib/node_modules'
+107 error }
+108 error The operation was rejected by your operating system.
+108 error It is likely you do not have the permissions to access this file as the current user
+108 error
+108 error If you believe this might be a permissions issue, please double-check the
+108 error permissions of the file and its containing directories, or try running
+108 error the command again as root/Administrator.
+109 verbose exit [ -13, true ]

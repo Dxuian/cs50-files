@@ -1,0 +1,30 @@
+#bitch
+{
+font-style:italic;
+color:"#00ffff";
+}
+
+alo
+{
+color:#ff0000;
+text-decoration:none;
+}
+alo:hover {
+color:#00ff00;
+}
+alooo:drag
+{
+color:#000000;
+text-decoration:underline;
+text-decoration:line-through;
+}
+.cs
+{
+    font-family:'comic sans ms';
+
+}
+.hello
+{
+    background-color:#abcffd;
+    backgroud: linear-gradient(to left , #abcdef ,#bcdefa, blue , green , rgba(0,255,0,0));
+}

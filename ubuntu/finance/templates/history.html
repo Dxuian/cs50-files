@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Transaction history
+{% endblock %}
+
+
+{% block main %}
+
+{% if purl=="0" %}
+<div class="container bg-danger">
+    No Transactions made
+</div>
+
+
+{% else %}
+<p class="l display-4">
+    Transaction history
+</p>
+
+<table class="rko  table bg-warning unntbuy">
+    <thead >
+        <tr class="rko">
+            <th class="table-th">Transaction-type</th>
+            <th class="table-th">Symbol</th>
+            <th class="table-th">Shares</th>
+            <th class="table-th">Price</th>
+            <th class="table-th">Amount</th>
+        </tr>
+    </thead>
+    <tbody id="lkpo" class="rko">
+    </tbody>
+</table>
+<script>
+    var s = "{{send}}";
+    var o = s.replace(/&#34;/g, '"');
+    var li = JSON.parse(o);
+    for ( let x = 0 ;  x < li.length ; x++)
+    {
+        if(Number(li[x]["amt"])<0)
+        {
+            document.getElementById("lkpo").innerHTML+="<tr class='bg-danger'>" + "<td> Sell </td>" +
+            "<td>"+li[x]["what"] + "</td>" +
+            "<td>"+li[x]["shares"]+"</td>" +
+            "<td>"+"$" + (Number(li[x]["price"])*-1).toLocaleString() +"</td>" +
+            "<td>"+"$"+(Number(li[x]["amt"])*-1).toLocaleString()+"</td>" + "</tr>";
+        }
+        else
+        {
+             document.getElementById("lkpo").innerHTML+="<tr class='bg-success'>" + "<td> Buy </td>"  +
+            "<td>"+li[x]["what"] + "</td>" +
+            "<td>"+li[x]["shares"]+"</td>" +
+            "<td>"+"$" + Number(li[x]["price"]).toLocaleString() +"</td>" +
+            "<td>"+"$"+Number(li[x]["amt"]).toLocaleString()+"</td>" + "</tr>";
+        }
+
+    }
+</script>
+{% endif %}
+
+
+{% endblock %}
